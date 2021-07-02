@@ -11,8 +11,8 @@ const app = express();
 app.get('/', (req, res) => {
   res.send('Hello World');
   
-  console.log('req : %j', req);
-  console.log('res : %j', res);
+  console.dir(req);
+  console.dir(res);
 });
 
 app.listen(PORT, HOST);
